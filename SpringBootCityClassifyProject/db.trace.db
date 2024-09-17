@@ -1,0 +1,372 @@
+2022-08-06 14:33:26 database: wrong user or password; user: "SA"
+org.h2.message.DbException: Wrong user name or password [28000-214]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.Engine.openSession(Engine.java:154)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:288)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:808)
+	at org.h2.server.web.WebApp.login(WebApp.java:1033)
+	at org.h2.server.web.WebApp.process(WebApp.java:226)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:510)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 50 more
+2022-08-06 14:33:40 database: wrong user or password; user: "SA"
+org.h2.message.DbException: Wrong user name or password [28000-214]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.Engine.openSession(Engine.java:154)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:288)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:808)
+	at org.h2.server.web.WebApp.login(WebApp.java:1033)
+	at org.h2.server.web.WebApp.process(WebApp.java:226)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:510)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 50 more
+2022-08-06 14:35:37 database: wrong user or password; user: "SA"
+org.h2.message.DbException: Wrong user name or password [28000-214]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.Engine.openSession(Engine.java:154)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:288)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:808)
+	at org.h2.server.web.WebApp.login(WebApp.java:1033)
+	at org.h2.server.web.WebApp.process(WebApp.java:226)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:510)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 50 more
+2022-08-07 10:32:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id integer not null, email varchar(255), name varchar(255), password varchar(255), primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id integer not null, email varchar(255), name varchar(255), password varchar(255), primary key (user_id)) [42001-214]
+2022-08-07 11:06:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id integer not null, email varchar(255) not null, name varchar(255), password varchar(255), primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id integer not null, email varchar(255) not null, name varchar(255), password varchar(255), primary key (user_id)) [42001-214]
+2022-08-07 11:06:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-214]
+2022-08-07 11:06:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-214]
+2022-08-07 18:59:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id)) [42001-214]
+2022-08-07 18:59:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-214]
+2022-08-07 18:59:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-214]
+2022-08-07 18:59:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-214]
+2022-08-07 19:02:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id)) [42001-214]
+2022-08-07 19:02:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-214]
+2022-08-07 19:02:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-214]
+2022-08-07 19:02:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-214]
+2022-08-07 19:54:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id)) [42001-214]
+2022-08-07 19:54:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-214]
+2022-08-07 19:54:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-214]
+2022-08-07 19:54:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id)) [42001-214]
+2022-08-07 19:54:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-214]
+2022-08-07 19:54:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-214]
+2022-08-07 19:54:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id)) [42001-214]
+2022-08-07 19:54:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-214]
+2022-08-07 19:54:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-214]
+2022-08-07 19:54:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id)) [42001-214]
+2022-08-07 19:54:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-214]
+2022-08-07 19:54:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-214]
+2022-08-07 19:55:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id)) [42001-214]
+2022-08-07 19:55:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-214]
+2022-08-07 19:55:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-214]
+2022-08-07 19:55:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id)) [42001-214]
+2022-08-07 19:55:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-214]
+2022-08-07 19:55:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-214]
+2022-08-07 19:56:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id)) [42001-214]
+2022-08-07 19:56:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-214]
+2022-08-07 19:56:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-214]
+2022-08-07 19:57:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id)) [42001-214]
+2022-08-07 19:57:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-214]
+2022-08-07 19:57:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-214]
+2022-08-07 19:57:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id)) [42001-214]
+2022-08-07 19:57:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-214]
+2022-08-07 19:57:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-214]
+2022-08-07 20:06:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id)) [42001-214]
+2022-08-07 20:06:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-214]
+2022-08-07 20:06:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-214]
+2022-08-07 20:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id)) [42001-214]
+2022-08-07 20:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-214]
+2022-08-07 20:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-214]
+2022-08-07 20:07:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id)) [42001-214]
+2022-08-07 20:07:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-214]
+2022-08-07 20:07:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-214]
+2022-08-07 20:09:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id)) [42001-214]
+2022-08-07 20:09:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-214]
+2022-08-07 20:09:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-214]
+2022-08-07 20:15:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id)) [42001-214]
+2022-08-07 20:15:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-214]
+2022-08-07 20:15:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-214]
+2022-08-07 20:15:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id)) [42001-214]
+2022-08-07 20:15:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-214]
+2022-08-07 20:15:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-214]
+2022-08-07 20:16:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id)) [42001-214]
+2022-08-07 20:16:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-214]
+2022-08-07 20:16:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-214]
+2022-08-07 20:19:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, name varchar(255) not null, password varchar(255), primary key (id)) [42001-214]
+2022-08-07 20:19:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-214]
+2022-08-07 20:19:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-214]
+2022-08-07 20:19:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select user0_.id as id1_2_, user0_.email as email2_2_, user0_.name as name3_2_, user0_.password as password4_2_ from [*]user user0_"; expected "identifier"; SQL statement:
+select user0_.id as id1_2_, user0_.email as email2_2_, user0_.name as name3_2_, user0_.password as password4_2_ from user user0_ [42001-214]
+2022-08-07 20:27:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255), name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255), name varchar(255), password varchar(255), primary key (id)) [42001-214]
+2022-08-07 20:27:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255), name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255), name varchar(255), password varchar(255), primary key (id)) [42001-214]
+2022-08-07 20:28:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255), name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255), name varchar(255), password varchar(255), primary key (id)) [42001-214]
+2022-08-07 20:30:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255), name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255), name varchar(255), password varchar(255), primary key (id)) [42001-214]
